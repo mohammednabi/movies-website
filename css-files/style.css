@@ -23,6 +23,7 @@ body {
     background-image: url(https://media1.popsugar-assets.com/files/thumbor/WCzZSP8GUbu9P1T6Y2JrdcMl-7o/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2019/02/28/011/n/24155406/tmp_2KX4zy_bd9f4ca2a0c89a2e_Dark_Arts_-_WWoHP_at_Universal_Studios_no_logo_.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     
     
     
@@ -122,7 +123,7 @@ header h1:hover{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    padding-top: 300px;
+    margin-top: 300px;
     font-family: harry p;
     letter-spacing: 5px;
     text-decoration: none;
@@ -143,7 +144,7 @@ header h1:hover{
     -o-transform: scale(1.08);
 }
 
-.second,.third,.forth {
+.second,.third,.forth ,.quotes,.line{
     width: 100%;
     min-height: 80vh;
     background-color: rgb(17, 1, 23);
@@ -157,11 +158,11 @@ header h1:hover{
 }
 
 .forth{
-min-height: 20vh;
+min-height: 15vh;
 }
 
 
-.second h1,.third h1,.forth h1 {
+.second h1,.third h1,.forth h1,.quotes h1 {
     color: white;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -177,11 +178,12 @@ min-height: 20vh;
     -ms-transition: .7s;
     -o-transition: .7s;
 }
+
 .third h1{
 color: #51ff9f;
 }
 
-.second h1:hover ,.third h1:hover,forth h1:hover {
+.second h1:hover ,.third h1:hover,forth h1:hover,.quotes h1:hover {
     letter-spacing: 12px;
 }
 
@@ -230,17 +232,23 @@ color: #51ff9f;
     -webkit-filter: none;
 }
 
-#quotes{
-    min-height: 80vh;
-    background-image: url(https://images4.alphacoders.com/216/216514.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.quotes{
+    min-height: 60vh;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-#quotes h6{
+.quotes h1{
+    z-index: 8;
+}
+
+.quotes h6{
     opacity: 10%;
     font-size: 50px;
+    z-index: 5;
+    text-transform: capitalize;
     
     transition: .5s;
     -webkit-transition: .5s;
@@ -249,13 +257,14 @@ color: #51ff9f;
     -o-transition: .5s;
 }
 
-#quotes h6:hover {
+
+.quotes h6:hover {
     opacity: 100%;
 }
 
 .cover2 {
     position: absolute;
-    min-height: 80vh;
+    min-height: 60vh;
     width: 100%;
     background-color: black;
     opacity: 60%;
@@ -263,6 +272,70 @@ color: #51ff9f;
     
 }
 
+.line{
+    min-height: 1vh;
+    background-color: #01060c;
+}
+
+
+#nemo{
+       background-image:url(https://images4.alphacoders.com/216/216514.jpg);
+       background-size: cover;
+       background-attachment: fixed;
+       background-position: center;
+       filter:grayscale() ;
+       -webkit-filter:grayscale() ;
+       transition:.7s ;
+       -webkit-transition:.7s ;
+       -moz-transition:.7s ;
+       -ms-transition:.7s ;
+       -o-transition:.7s ;
+}
+#nemo:hover,#harry:hover,#lord:hover{
+    filter: none;
+    -webkit-filter: none;
+}
+
+
+#harry{
+    background-image: url(https://www.looper.com/img/gallery/the-most-intense-harry-potter-scene-we-never-got-to-see/l-intro-1600285406.jpg);
+    background-size: cover;
+        background-attachment: fixed;
+        background-position: 0px 40px ;
+        filter: grayscale();
+        -webkit-filter: grayscale();
+        transition: .7s;
+        -webkit-transition: .7s;
+        -moz-transition: .7s;
+        -ms-transition: .7s;
+        -o-transition: .7s;
+    }
+
+    #harry h1{
+        font-size: 50px;
+    }
+    
+
+
+        #lord {
+            background-image: url(https://wealthofgeeks.com/wp-content/uploads/2021/12/Fellowship-of-the-Rings.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 0px 40px;
+            filter: grayscale();
+            -webkit-filter: grayscale();
+            transition: .7s;
+            -webkit-transition: .7s;
+            -moz-transition: .7s;
+            -ms-transition: .7s;
+            -o-transition: .7s;
+        }
+    
+        #lord h1 {
+            font-size: 50px;
+        }
+    
+       
 
 
 ::-webkit-scrollbar {
