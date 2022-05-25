@@ -19,13 +19,9 @@ include 'includes/nav.php';
     $title=$_POST['title'];
     $imgUrl= $_POST['imgUrl'];
     $demoUrl= $_POST['demoUrl'];
-$servername = "localhost";
-$username = "root";
-$password = "";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password,'php_project');
-
+    include 'includes/db.php';
+    
 $sql = "INSERT INTO movie  (title, imgUrl, demoUrl)
 VALUES ('$title', '$imgUrl', '$demoUrl')";
 

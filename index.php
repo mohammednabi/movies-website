@@ -21,14 +21,8 @@ include 'includes/nav.php';
       <h1>Movies</h1>
       <div class="best-bar">
     <?php
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, 'php_project');
-
+    
+include 'includes/db.php';
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
@@ -45,7 +39,7 @@ include 'includes/nav.php';
         $demoUrl = $row['demoUrl'];
         echo '  
       
-          <a  href=" ' . $demoUrl . '" class=" col-lg-2 col-md-4 col-sm-6 my-3" id="a1"><img width="95%" class="slider-img" src="' . $imgUrl . '"alt="' . $title . '"></a>
+          <a  target ="blank"  href=" ' . $demoUrl . '" class=" col-lg-2 col-md-4 col-sm-6 my-3" id="a1"><img width="95%" class="slider-img" src="' . $imgUrl . '"alt="' . $title . '"></a>
       ';
       ++$counter;
       if ($counter>6){
