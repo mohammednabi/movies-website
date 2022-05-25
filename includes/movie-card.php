@@ -1,0 +1,1 @@
+<a href="#" class=" col-lg-2 col-md-4 col-sm-6 my-3" id="a1"><img width="95%" class="slider-img" src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg" alt=""></a>
