@@ -184,7 +184,7 @@ min-height: 15vh;
     -o-transition: .7s;
 }
 
-.third h1{
+.third h1, .footer-brand {
 color: #51ff9f;
 }
 
@@ -319,7 +319,13 @@ color: #51ff9f;
 
 .socialmedia i{
     color: #fff;
-    width: 40px;
+    margin-right: 24px;
+    transition: all .5s ease-in-out;
+}
+
+.socialmedia i:hover{
+    color: #51ff9f;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar {
