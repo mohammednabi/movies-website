@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
 ?>
-    <title>GITFLIX</title>
+    <title>GITFLEX</title>
 </head>
 
 <body>

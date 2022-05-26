@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
 ?>
-    <title>GITFLIX</title>
+    <title>GITFLEX</title>
 
 </head>
 <body>
@@ -21,7 +21,7 @@ include 'includes/nav.php';
     $demoUrl= $_POST['demoUrl'];
 
     include 'includes/db.php';
-    
+
 $sql = "INSERT INTO movie  (title, imgUrl, demoUrl)
 VALUES ('$title', '$imgUrl', '$demoUrl')";
 
